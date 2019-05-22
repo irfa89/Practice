@@ -13,6 +13,7 @@ def count_negatives(given_array):
 
 
 def main():
+    # Test cases
     print("""
     How many negative numbers are there in the following array?
     (There are 6.)
