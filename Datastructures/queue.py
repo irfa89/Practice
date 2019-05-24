@@ -58,7 +58,7 @@ def main():
     my_Queue.enqueue('1')
     my_Queue.enqueue('2')
     print(my_Queue.items)
-    my_Queue.dequeue()
+    print(my_Queue.dequeue())
     print(my_Queue.items)
     print(my_Queue.peek())
     print(my_Queue.size())
