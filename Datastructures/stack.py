@@ -35,14 +35,27 @@ class Stack:
         if self.items:
             return self.items.pop()
 
-    def peek(self): # check stack content
-        pass
+    def peek(self):
+        """
+        Runtime : O(1)
+        :return: top of stack
+        """
+        if self.items:
+            return self.items[:-1]
 
     def size(self):
-        pass
+        """
+        Runtime = O(1)
+        :return: length of list
+        """
+        return len(self.items)
 
     def is_empty(self):
-        pass
+        """
+        Runtime : O(1)
+        :return: Bool
+        """
+        return self.items == []
 
 def main():
     stack_1 = Stack()
@@ -51,6 +64,8 @@ def main():
     print(stack_1.items)
     stack_1.pop()
     print(stack_1.items)
+    print(stack_1.peek())
+    print(stack_1.size())
 
 if __name__ == "__main__":
     start = time.time()
